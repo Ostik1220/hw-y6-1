@@ -2,7 +2,7 @@
   "name": "hw-y6-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Ostik1220/hw-y6-1",
+  "homepage": "https://ostik1220.github.io/hw-y6-1/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
