@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <BrowserRouter basename='/Ostik1220/hw-y6-1'>
+        <BrowserRouter basename='/Ostik1220/hw-y6-1/'>
     <App />
     </BrowserRouter>
   </React.StrictMode>
