@@ -1,6 +1,7 @@
 import { Header } from "./Header";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 export const MainPage = () => {
   const [movies, setMovies] = useState([]);
@@ -9,7 +10,7 @@ export const MainPage = () => {
     const getMovies = async () => {
       try {
         const response = await axios.get(
-          "https://api.themoviedb.org/3/trending/all/day",
+          "https://api.themoviedb.org/3/trending/movie/day",
           {
             headers: {
               accept: "application/json",
@@ -31,12 +32,13 @@ export const MainPage = () => {
 
   return (
     <div>
-      <Header />
-      <h1>mainText</h1>
-
+      <Header isMainPage={true}/>
+      <h1>Tranding today</h1>
+<div className="BOX">
       {movies.map((movie) => (
-        <p key={movie.id}>{movie.title || movie.name}</p>
+        <NavLink key={movie.id} to={`/movies/${movie.id}`}>{movie.title || movie.name}</NavLink>
       ))}
+    </div>
     </div>
   );
 };
