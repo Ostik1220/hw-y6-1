@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Ostik1220/hw-y6-1/static/css/main.b6c951e0.css",
-    "main.js": "/Ostik1220/hw-y6-1/static/js/main.a220afe4.js",
-    "index.html": "/Ostik1220/hw-y6-1/index.html",
-    "main.b6c951e0.css.map": "/Ostik1220/hw-y6-1/static/css/main.b6c951e0.css.map",
-    "main.a220afe4.js.map": "/Ostik1220/hw-y6-1/static/js/main.a220afe4.js.map"
+    "main.css": "/hw-y6-1/static/css/main.b6c951e0.css",
+    "main.js": "/hw-y6-1/static/js/main.a220afe4.js",
+    "index.html": "/hw-y6-1/index.html",
+    "main.b6c951e0.css.map": "/hw-y6-1/static/css/main.b6c951e0.css.map",
+    "main.a220afe4.js.map": "/hw-y6-1/static/js/main.a220afe4.js.map"
   },
   "entrypoints": [
     "static/css/main.b6c951e0.css",
