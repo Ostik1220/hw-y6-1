@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { RedText, Text } from "./components.styled";
 
 export const Reviews = () => {
   const { movieId } = useParams();
@@ -50,12 +51,12 @@ export const Reviews = () => {
 
   return (
     <div>
-      <h2>Reviews</h2>
+      <title>Reviews</title>
       <ul>
         {reviews.map((review) => (
           <li key={review.id} style={{ marginBottom: 16 }}>
-            <strong>{review.author}</strong>
-            <p>{review.content}</p>
+            <RedText>{review.author}</RedText>
+            <Text>{review.content}</Text>
           </li>
         ))}
       </ul>

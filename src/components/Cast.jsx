@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { RedText, Text } from "./components.styled";
 
 export const Cast = () => {
   const { movieId } = useParams();
@@ -81,8 +82,8 @@ export const Cast = () => {
               />
 
               <div>
-                <strong>{actor.name}</strong>
-                <div>as {actor.character}</div>
+                <Text>{actor.name}</Text>
+                <RedText>as {actor.character}</RedText>
               </div>
             </li>
           );

@@ -2,6 +2,7 @@ import { Header } from "./Header";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate, NavLink, Outlet } from "react-router-dom";
+import { RedText, RedTytle, Text, Tytle } from "./components.styled";
 
 export const MoviePage = () => {
   const { movieId } = useParams();
@@ -44,17 +45,17 @@ export const MoviePage = () => {
           />
 
           <div>
-            <h1>
+            <RedTytle>
               {movie.title} ({movie.release_date.slice(0, 4)})
-            </h1>
+            </RedTytle>
 
-            <p>User score: {movie.vote_average}/10⭐</p>
+            <RedText>User score: {movie.vote_average}/10⭐</RedText>
 
-            <h2>Overview</h2>
-            <p>{movie.overview}</p>
+            <Tytle>Overview</Tytle>
+            <Text>{movie.overview}</Text>
 
-            <h3>Genres</h3>
-            <p>{movie.genres.map((g) => g.name).join(", ")}</p>
+            <RedText>Genres</RedText>
+            <Text>{movie.genres.map((g) => g.name).join(", ")}</Text>
           </div>
         </div>
       )}

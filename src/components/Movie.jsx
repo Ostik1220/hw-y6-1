@@ -2,6 +2,7 @@ import { Header } from "./Header";
 import { useState } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { Button } from "./components.styled";
 
 export const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -38,13 +39,13 @@ export const Movies = () => {
     <div>
       <Header />
 
-      <form onSubmit={findMovie}>
+      <form onSubmit={findMovie} className="SearchForm">
         <input type="text" name="movie" placeholder="Search movie..." />
-        <button type="submit">search</button>
+        <Button type="submit">search</Button>
       </form>
       <div className="BOX">
       {movies.map((film) => (
-        <NavLink key={film.id} to={`/movies/${film.id}`}>
+        <NavLink key={film.id} to={`/movies/${film.id}`} className="Link">
   {film.title}
 </NavLink>
       ))}

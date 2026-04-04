@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { Logo, RedText } from './components.styled';
 
 export const Header = ({isMainPage}) => {
     console.log(isMainPage)
@@ -11,6 +12,7 @@ export const Header = ({isMainPage}) => {
               Movies
             </NavLink>
         </nav>
+        <div className='display'><Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Eo_circle_red_letter-m.svg/3840px-Eo_circle_red_letter-m.svg.png" alt="M"/><RedText>ovies</RedText></div>
         </div>
     )} else {
             return ( <div className='header'>
@@ -22,6 +24,7 @@ export const Header = ({isMainPage}) => {
               Movies
             </NavLink>
         </nav>
+        <div className='display'><Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Eo_circle_red_letter-m.svg/3840px-Eo_circle_red_letter-m.svg.png" alt="M"/><RedText>ovies</RedText></div>
         </div>
     )
     }

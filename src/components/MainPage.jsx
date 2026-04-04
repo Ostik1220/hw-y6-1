@@ -2,6 +2,8 @@ import { Header } from "./Header";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { Tytle } from "./components.styled";
+
 
 export const MainPage = () => {
   const [movies, setMovies] = useState([]);
@@ -33,10 +35,10 @@ export const MainPage = () => {
   return (
     <div>
       <Header isMainPage={true}/>
-      <h1>Tranding today</h1>
+      <Tytle>Tranding today</Tytle>
 <div className="BOX">
       {movies.map((movie) => (
-        <NavLink key={movie.id} to={`/movies/${movie.id}`}>{movie.title || movie.name}</NavLink>
+        <NavLink key={movie.id} to={`/movies/${movie.id}`} className="Link">{movie.title || movie.name}</NavLink>
       ))}
     </div>
     </div>
