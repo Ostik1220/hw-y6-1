@@ -4,7 +4,7 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { Button } from "./components.styled";
 
-export const Movies = () => {
+ const Movies = () => {
   const [movies, setMovies] = useState([]);
 
   const findMovie = async (e) => {
@@ -53,3 +53,5 @@ export const Movies = () => {
     </div>
   );
 };
+
+export default Movies

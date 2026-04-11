@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { Tytle } from "./components.styled";
 
 
-export const MainPage = () => {
+ const MainPage = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -44,3 +44,5 @@ export const MainPage = () => {
     </div>
   );
 };
+
+export default MainPage

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { RedText, Text } from "./components.styled";
 
-export const Reviews = () => {
+const Reviews = () => {
   const { movieId } = useParams();
   const [reviews, setReviews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -63,3 +63,5 @@ export const Reviews = () => {
     </div>
   );
 };
+
+export default Reviews

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { RedText, Text } from "./components.styled";
 
-export const Cast = () => {
+ const Cast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -92,3 +92,4 @@ export const Cast = () => {
     </div>
   );
 };
+export default Cast

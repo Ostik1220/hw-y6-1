@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams, useNavigate, NavLink, Outlet } from "react-router-dom";
 import { RedText, RedTytle, Text, Tytle } from "./components.styled";
 
-export const MoviePage = () => {
+const MoviePage = () => {
   const { movieId } = useParams();
   const navigate = useNavigate();
   const [movie, setMovie] = useState(null);
@@ -79,3 +79,5 @@ export const MoviePage = () => {
     </div>
   );
 };
+
+export default MoviePage
